@@ -32,10 +32,10 @@ class Taxi( Transportation ):
 class Train( Transportation ):
 
    def __init__(self, start, end, distance):
-      Transportation.__init__(self, start, end, distance)
+      Transportation.__init__(self, start, end, distance, station)
 
    def find_cost(self):
-      return self.distance * 5
+      return self.station * 5
 
    
 # main program
